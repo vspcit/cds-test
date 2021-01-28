@@ -1,18 +1,26 @@
 {
-  "name": "cds-test",
-  "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
-  "license": "UNLICENSED",
-  "private": true,
-  "dependencies": {
-    "@sap/cds": "^4",
-    "express": "^4"
-  },
-  "devDependencies": {
-    "sqlite3": "^5"
-  },
-  "scripts": {
-    "start": "cds run"
-  }
+    "name": "cds-test",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "https://github.com/vspcit/cds-test.git",
+    "license": "DTFYWWI",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^4",
+        "express": "^4",
+        "@sap/hana-client": "^2.6.61"
+    },
+    "devDependencies": {
+        "sqlite3": "^5"
+    },
+    "scripts": {
+        "start": "cds run"
+    },
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "sql"
+            }
+        }
+    }
 }
